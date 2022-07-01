@@ -5,18 +5,19 @@ import $ from 'jquery';
 import { CurrencyRequest } from './currency-request';
 
 function getElementsCurrency(response) {
-  if (response) {$('#conversionOutput').text(response.conversion_rate);
-  $('#exchangeOutput').text(response.conversion_result);
-} else {$('#errorOutput').text(`THERE WAS AN ERROR ${response}`);}
+  if (response) {
+    $('#conversionOutput').text(response.conversion_rate);
+    $('#exchangeOutput').text(response.conversion_result);
+  } else { $('#errorOutput').text(`THERE WAS AN ERROR ${response}`); }
 }
 
-async function makeCurrencyApiCall(currencyType, currencyConvert, exchangeAmount){
+async function makeCurrencyApiCall(currencyType, currencyConvert, exchangeAmount) {
   const response = await CurrencyRequest.getCurrency(currencyType, currencyConvert, exchangeAmount);
   getElementsCurrency(response);
 }
 
-$(document).ready(function(){
-  $('#currencyExchanger').submit(function(event){
+$(document).ready(function () {
+  $('#currencyExchanger').submit(function (event) {
     event.preventDefault();
     let currencyType = $('#currencyType').val();
     let currencyConvert = $('#currencyConvert').val();

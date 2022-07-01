@@ -15,11 +15,11 @@
   <div class="lowerHeader"></div>
   <div class="parentContainer">
     <div class="container">
-      <div class="card" style="width: 300px;">
+      <div class="card" id="inputCard" style="width: 400px;">
         <div class="card-body">
           <h5 class="card-title">Currency Exchange</h6>
-            <p>Enter 3 digit currency letter code: <a
-                href="https://www.exchangerate-api.com/docs/supported-currencies">(List of supported Currencies)</a></p>
+            <p>Enter 3 digit currency letter code:</p>
+            <p><a href="https://www.exchangerate-api.com/docs/supported-currencies" target="_blank">(List of supported Currencies)</a></p>
             <form id="currencyExchanger">
               <div class="form-group">
                 <label for="currencyType">Exchange:</label>
@@ -39,7 +39,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="card" style="width: 300px;">
+      <div class="card" id="outputCard" style="width: 400px;">
         <div class="card-body">
           <h6 class="card-title">Conversion Rate:</h6>
           <div id="conversionOutput"></div>
@@ -50,6 +50,8 @@
       </div>
     </div>
   </div>
+  <div class="upperFooter"></div>
+  <div class="lowerFooter"></div>
 </body>
 
 </html>
