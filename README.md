@@ -18,14 +18,19 @@ This is a web application that uses the www.exchangerate-api.com API to return e
 
 ## Setup/Installation Requirements
 * Clone this repository to your desktop.
-* Navigate to the top level directory.
+* Navigate to the root directory.
 * Open directory into text-editor.
-* Run $ npm install in terminal.
-* 
+* Run $ npm run install in root directory in terminal.
+* Run $ npm run build in root directory in terminal.
+* In browser navigate to https://www.exchangerate-api.com/docs/overview and follow instructions to create AIP key.
+* Create .env file in root directory.
+* add API key to .env file $ API_KEY=YOUR-API-KEY-HERE without any spaces, backticks or quotes. Its not a string.
+* add API key to API url with ${process.env.API_KEY}.
 
 
 ## Known Bugs
-* No UI yet, html and jquery planned for future work.
+* API key in .env file returns 403 error.
+* 3 digit currency letter code must be typed in caps.
 
 ## License
 MIT
