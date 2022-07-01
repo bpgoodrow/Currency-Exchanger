@@ -30,7 +30,7 @@ This is a web application that uses the www.exchangerate-api.com API to return e
 
 
 ## Known Bugs
-* API key in .env file returns 403 error.
+* N/A
 
 ## License
 MIT
