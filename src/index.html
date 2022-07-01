@@ -9,37 +9,43 @@
 </head>
 
 <body>
-  <div class="header">
+  <div class="upperHeader">
     <h1>Currency Exchanger</h1>
   </div>
-  <div class="container">
-    <div class="card" style="width: 300px;">
-      <div class="card-body">
-        <h5 class="card-title">Currency Exchange</h6>
-          <p>Enter 3 digit currency letter code: <a
-              href="https://www.exchangerate-api.com/docs/supported-currencies">(List of supported Currencies)</a></p>
-          <form id="currencyExchanger">
-            <div class="form-group">
-              <label for="currencyType">Exchange:</label>
-              <input type="text" id="currencyType">
-            </div>
-            <div class="form-group">
-              <label for="currencyConvert">To:</label>
-              <input type="text" id="currencyConvert">
-            </div>
-            <div class="form-group">
-              <label for="exchangeAmount">Amount to Exchange:</label>
-              <input type="text" id="exchangeAmount">
-            </div>
-            <input id="submitButton" type="submit">
-          </form>
+  <div class="lowerHeader"></div>
+  <div class="parentContainer">
+    <div class="container">
+      <div class="card" style="width: 300px;">
+        <div class="card-body">
+          <h5 class="card-title">Currency Exchange</h6>
+            <p>Enter 3 digit currency letter code: <a
+                href="https://www.exchangerate-api.com/docs/supported-currencies">(List of supported Currencies)</a></p>
+            <form id="currencyExchanger">
+              <div class="form-group">
+                <label for="currencyType">Exchange:</label>
+                <input type="text" id="currencyType">
+              </div>
+              <div class="form-group">
+                <label for="currencyConvert">To:</label>
+                <input type="text" id="currencyConvert">
+              </div>
+              <div class="form-group">
+                <label for="exchangeAmount">Amount to Exchange:</label>
+                <input type="text" id="exchangeAmount">
+              </div>
+              <input id="submitButton" type="submit">
+            </form>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 300px;">
-      <div class="card-body">
-        <h6 class="card-title">Exchange Rate:</h6>
-        <div id="conversionOutput"></div>
-        <div id="exchangeOutput"></div>
+    <div class="container">
+      <div class="card" style="width: 300px;">
+        <div class="card-body">
+          <h6 class="card-title">Conversion Rate:</h6>
+          <div id="conversionOutput"></div>
+          <h6 class="card-title">Exchanged Amount:</h6>
+          <div id="exchangeOutput"></div>
+        </div>
       </div>
     </div>
   </div>
