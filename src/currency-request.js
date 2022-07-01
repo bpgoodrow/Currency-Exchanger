@@ -5,7 +5,7 @@ export class CurrencyRequest {
       if (!response.ok) {
         throw Error(response.statusText);
       }
-      return response;
+      return response.json();
     } catch(error) {
       return error.message;
     }

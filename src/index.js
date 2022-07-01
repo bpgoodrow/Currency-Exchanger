@@ -5,7 +5,7 @@ import $ from 'jquery';
 import { CurrencyRequest } from './currency-request';
 
 function getElementsCurrency(response) {
-  $('#exchangeOutput').html(response);
+  $('#exchangeOutput').text(response.conversion_rate);
 }
 
 async function makeCurrencyApiCall(currencyType, currencyConvert){
