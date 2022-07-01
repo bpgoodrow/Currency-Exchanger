@@ -1,4 +1,4 @@
-# Galactic Age Calculator
+# Currency Exchanger
 By Ben Goodrow
 
 This is a web application that uses the www.exchangerate-api.com API to return exchange rates of different currencies.
