@@ -15,17 +15,30 @@
   <div class="container">
     <div class="card" style="width: 300px;">
       <div class="card-body">
-        <h6 class="card-title">Currency Exchange</h6>
-        <form id="currencyExchanger">
-          <input type="text" id="currencyType">
-          <input type="text" id="currencyConvert">
-          <input id="submitButton" type="submit">
-        </form>
+        <h5 class="card-title">Currency Exchange</h6>
+          <p>Enter 3 digit currency letter code: <a
+              href="https://www.exchangerate-api.com/docs/supported-currencies">(List of supported Currencies)</a></p>
+          <form id="currencyExchanger">
+            <div class="form-group">
+              <label for="currencyType">Exchange:</label>
+              <input type="text" id="currencyType">
+            </div>
+            <div class="form-group">
+              <label for="currencyConvert">To:</label>
+              <input type="text" id="currencyConvert">
+            </div>
+            <div class="form-group">
+              <label for="exchangeAmount">Amount to Exchange:</label>
+              <input type="text" id="exchangeAmount">
+            </div>
+            <input id="submitButton" type="submit">
+          </form>
       </div>
     </div>
     <div class="card" style="width: 300px;">
       <div class="card-body">
-        <h6 class="card-title">Rates Exchanged</h6>
+        <h6 class="card-title">Exchange Rate:</h6>
+        <div id="conversionOutput"></div>
         <div id="exchangeOutput"></div>
       </div>
     </div>
