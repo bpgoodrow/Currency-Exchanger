@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template</title>
+  <title>Currency Exchange</title>
 </head>
+
 <body>
   <div class="header">
     <h1>Currency Exchanger</h1>
@@ -14,9 +16,11 @@
     <div class="card" style="width: 300px;">
       <div class="card-body">
         <h6 class="card-title">Currency Exchange</h6>
-        <input type="number" id="usd">
-        <input type="text" id="currencyType">
-        <button class="btn-success" id="submitExchange">Exchange</button>
+        <form id="currencyExchanger">
+          <input type="text" id="currencyType">
+          <input type="text" id="currencyConvert">
+          <input id="submitButton" type="submit">
+        </form>
       </div>
     </div>
     <div class="card" style="width: 300px;">
@@ -27,4 +31,5 @@
     </div>
   </div>
 </body>
+
 </html>
