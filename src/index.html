@@ -7,6 +7,24 @@
   <title>Template</title>
 </head>
 <body>
-
+  <div class="header">
+    <h1>Currency Exchanger</h1>
+  </div>
+  <div class="container">
+    <div class="card" style="width: 300px;">
+      <div class="card-body">
+        <h6 class="card-title">Currency Exchange</h6>
+        <input type="number" id="usd">
+        <input type="text" id="currencyType">
+        <button class="btn-success" id="submitExchange">Exchange</button>
+      </div>
+    </div>
+    <div class="card" style="width: 300px;">
+      <div class="card-body">
+        <h6 class="card-title">Rates Exchanged</h6>
+        <div id="exchangeOutput"></div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -5,11 +5,11 @@ import $ from 'jquery';
 import { CurrencyRequest } from './currency-request';
 
 function getElementsCurrency(response) {
-  let exchange = response;
+  let usd = response;
   $('#exchangeOutput').html(``)
 }
 
-async function makeCurrencyApiCall(exchange){
+async function makeCurrencyApiCall(usd, currecncyType){
   const response = await CurrencyRequest.getCurrency(exchange);
   getElementsCurrency(response);
 }
@@ -17,6 +17,7 @@ async function makeCurrencyApiCall(exchange){
 $(document).ready(function(){
   $('#currencyExchanger').submit(function(event){
     event.preventDefault();
-    let exchange = $('#exchange').val();
+    let usd = $('#usd').val();
+    let currecncyType = $('#currencyType').val();
   })
 })
